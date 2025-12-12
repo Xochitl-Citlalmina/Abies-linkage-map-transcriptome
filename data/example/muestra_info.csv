@@ -1,0 +1,17 @@
+muestra,condicion,estado
+DC01_15,alta,dañado
+DC02_15,alta,dañado
+DC03_15,alta,dañado
+DC04_15,alta,dañado
+DC05_15,alta,dañado
+SC01_15,alta,sano
+SC02_15,alta,sano
+SC03_15,alta,sano
+SC04_15,alta,sano
+SC05_15,alta,sano
+DS01_15,moderada,dañado
+DS02_15,moderada,dañado
+DS04_15,moderada,dañado
+SS01_15,moderada,sano
+SS02_15,moderada,sano
+SS05_15,moderada,sano
