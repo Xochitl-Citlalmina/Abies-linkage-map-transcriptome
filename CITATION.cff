@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this pipeline, please cite the associated manuscript."
+title: "Integration of Linkage Mapping and Transcriptomes Reveals Ozone‐Response Mechanisms in a Peri-Urban Forest Tree from Central Mexico"
+authors:
+  - family-names: "Granados-Aguilar"
+    given-names: "Xochitl"
+repository-code: "https://github.com/<YOUR_GITHUB_ORG>/<YOUR_REPO>"
+date-released: "2025-12-12"
+license: "MIT"

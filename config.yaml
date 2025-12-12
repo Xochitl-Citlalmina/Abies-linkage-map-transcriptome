@@ -1,0 +1,53 @@
+# config.yaml (example)
+# All paths can be absolute or relative to the repo root.
+
+# Where your scripts live (recommended: ./scripts)
+scripts_dir: ./scripts
+
+# Where runs should be written
+out_root: ./runs
+run_name: latest
+
+# ---- Required inputs for DESeq2 / WGCNA / FDR / correlations ----
+# These will be staged into the workdir with the filenames expected by your scripts.
+count_matrix_csv: ./data/example/conteo_data_sin_duplicados.csv
+metadata_csv: ./data/example/muestra_info.csv
+linkage_map_tsv: ./data/example/combined_map_data.txt
+expression_long_tsv: ./data/example/allgenesorder.txt   # long format: expresion, GENE, muestra
+
+# ---- Step toggles ----
+do_deseq2: 1
+do_wgcna_coexp: 1
+do_coexp_fdr: 1
+do_correlacion_cortas: 1
+
+# Optional: build allgenesorder.txt from a folder of per-sample files
+do_concat_expression: 0
+expression_files_dir: ./data/expression_files
+
+# Optional: portable BAM counting (replaces the current count_genes_bamfile.sh which is SLURM/hardcoded)
+do_count_from_bam: 0
+bam_dir: ./data/bams
+samtools_bin: samtools
+samples_json: ["DC01_15_sw10L50","SC01_15_sw10L50"]
+
+# Optional: patch parameters without editing your original scripts
+n_muestras: 10                  # used to patch Coexp_FDR.R
+expression_threshold: 500       # used to patch correlacion_cortas.py
+cm_bins_json: [1, 5]            # used to patch correlacion_cortas.py
+
+# Optional: LG BLAST lookup + coordinate join + position extraction
+do_busqueda_lg: 0
+locus_list_txt: ./data/locusLG12.txt
+blast_tsv: ./data/e-30.blastn.txt
+
+do_coordenadas_gen: 0
+order_mapped_tsv: ./data/order12_10PS.mapped
+resultados_lg_tsv: ./data/resultadoslg12.txt
+
+do_extraer_pos_gen: 0
+coords_dir: ./data/coordenadas_genesTransc
+
+# Optional: run these scripts if present in ./scripts
+do_obtener_locus_gen_pos: 0
+do_poisson: 0

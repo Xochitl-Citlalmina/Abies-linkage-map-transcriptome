@@ -1,0 +1,43 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Outputs / large data
+runs/
+results/
+logs/
+data/**
+
+!data/example/**
+*.bam
+*.bai
+*.vcf
+*.fastq.gz
+*.fq.gz
+*.fa
+*.fasta
+*.nhr
+*.nin
+*.nsq
+
+# Figures
+*.tiff
+*.tif
+*.png
+*.pdf
+*.svg
