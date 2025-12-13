@@ -1,11 +1,33 @@
 cff-version: 1.2.0
 message: "If you use this pipeline, please cite the associated manuscript."
 title: "Integrating high-density linkage maps and transcriptomics reveals ozone‐response expression modules in a peri-urban forest tree"
+type: software
 authors:
   - family-names: "Granados-Aguilar"
     given-names: "Xochitl"
+  - family-names: "Gasca-Pineda"
+    given-names: "Jaime"
 repository-code: "https://github.com/Xochitl-Citlalmina/Abies-linkage-map-transcriptome"
-date-released: "2025-12-12"
-license: "MIT"
 url: "https://github.com/Xochitl-Citlalmina/Abies-linkage-map-transcriptome"
+year: 2025
+license: "MIT"
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Granados-Aguilar"
+      given-names: "Xochitl"
+    - family-names: "Reyes-Galindo"
+      given-names: "Verónica"
+    - family-names: "Giles-Pérez"
+      given-names: "Gustavo I."
+    - family-names: "Gasca-Pineda"
+      given-names: "Jaime"
+    - family-names: "Mastretta-Yanes"
+      given-names: "Alicia"
+    - family-names: "Jaramillo-Correa"
+      given-names: "Juan Pablo"
+  title: "Integration of Linkage Mapping and Transcriptomes Reveals Ozone‐Response Mechanisms in a Peri-Urban Forest Tree from Central Mexico"
+  year: 2025
+  status: "in review"
 
