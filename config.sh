@@ -5,10 +5,10 @@ SCRIPTS_DIR="./scripts"
 OUT_ROOT="./runs"
 RUN_NAME="latest"
 
-COUNT_MATRIX_CSV="./data/conteo_data_sin_duplicados.csv"
-METADATA_CSV="./data/muestra_info.csv"
-LINKAGE_MAP_TSV="./data/combined_map_data.txt"
-EXPRESSION_LONG_TSV="./data/allgenesorder.txt"
+COUNT_MATRIX_CSV="./data/example/conteo_data_sin_duplicados.csv"
+METADATA_CSV="./data/example/muestra_info.csv"
+LINKAGE_MAP_TSV="./data/example/combined_map_data.txt"
+EXPRESSION_LONG_TSV="./data/example/allgenesorder.txt"
 
 DO_DESEQ2=1
 DO_WGCNA_COEXP=1
