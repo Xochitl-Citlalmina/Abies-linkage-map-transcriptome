@@ -21,9 +21,22 @@ venv/
 runs/
 results/
 logs/
+
+# Ignore all data by default
 data/**
 
+# But keep the small example dataset tracked
 !data/example/**
+!data/example/**/*
+
+# Keep linkage-map portability resources tracked
+!data/linkage_map_loci/**
+!data/annotation/**
+
+# Allow FASTA for linkage-map loci (override *.fa ignore)
+!data/linkage_map_loci/*.fa
+!data/linkage_map_loci/*.fasta
+
 *.bam
 *.bai
 *.vcf
