@@ -279,8 +279,13 @@ Rscript scripts/poisson_ultimo.R
 Raw sequencing data are available at NCBI under BioProject **PRJNA1314304**
 (*Genotyping-by-sequencing for linkage map construction in Abies religiosa*).
 
-This repository contains the analysis scripts and a small `data/example/` dataset to test that the pipeline runs end-to-end.
+This repository hosts the analysis pipeline, a small `data/example/` dataset for testing, and sequence-defined resources that enable reuse of the linkage map across studies by matching loci via sequence similarity (rather than dataset-specific marker names).
 
+### Linkage-map loci and annotations
+- `data/linkage_map_loci/matches_loci.fa` — marker-associated locus sequences used in the linkage map (FASTA; STACKS locus IDs retained)
+- `data/annotation/lociLG_blast.gff3` — functional annotations for mapped loci (GFF3; InterPro-based)
+
+**Typical uses:** (i) within-*A. religiosa* map-to-map comparisons by sequence matching; (ii) map-to-assembly anchoring/validation by aligning scaffolds/contigs to `matches_loci.fa`.
 
 ## 🧾 Citation
 
